@@ -1,28 +1,17 @@
-let seed = "";
+let genero = "";
 
-function gerarAvatar(){
+function escolherGenero(valor){
 
-    let estilo = document.getElementById("estilo").value;
+    genero = valor;
 
-    document.getElementById("avatar").src =
-    `https://api.dicebear.com/9.x/${estilo}/svg?seed=${seed}`;
+    localStorage.setItem("genero",valor);
 
-}
-
-function novoAvatar(){
-
-    seed = Math.random().toString(36).substring(2);
-
-    gerarAvatar();
+    document.getElementById("btn").disabled = false;
 
 }
 
-function continuar(){
+function proximo(){
 
-    localStorage.setItem("avatar",document.getElementById("avatar").src);
-
-    window.location.href="feed.html";
+    window.location.href="peso.html";
 
 }
-
-novoAvatar();

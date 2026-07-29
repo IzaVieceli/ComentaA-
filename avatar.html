@@ -2,51 +2,48 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ComentAí - Avatar</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>ComentAí</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 <div class="container">
 
-    <h1>Crie seu Avatar</h1>
+<h1>💬 ComentAí</h1>
 
-    <p>Escolha um estilo.</p>
+<h2>Crie seu personagem</h2>
 
-    <div class="avatar-box">
+<p>Escolha o gênero.</p>
 
-        <img id="avatar" width="220">
+<div class="opcoes">
 
-    </div>
+<div class="opcao" onclick="escolherGenero('homem')">
+👨
+<p>Homem</p>
+</div>
 
-    <label>Estilo</label>
+<div class="opcao" onclick="escolherGenero('mulher')">
+👩
+<p>Mulher</p>
+</div>
 
-    <select id="estilo" onchange="gerarAvatar()">
+</div>
 
-        <option value="adventurer">Aventureiro</option>
-        <option value="fun-emoji">Emoji</option>
-        <option value="bottts">Robô</option>
-        <option value="pixel-art">Pixel</option>
-        <option value="thumbs">Cartoon</option>
-
-    </select>
-
-    <button onclick="novoAvatar()">
-        🔄 Gerar outro
-    </button>
-
-    <button onclick="continuar()">
-        Continuar
-    </button>
+<button id="btn" onclick="proximo()" disabled>
+Próximo
+</button>
 
 </div>
 
 <script src="avatar.js"></script>
 
 </body>
+
 </html>
