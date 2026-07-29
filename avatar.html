@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComentAí - Avatar</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Crie seu Avatar</h1>
+
+    <p>Escolha um estilo.</p>
+
+    <div class="avatar-box">
+
+        <img id="avatar" width="220">
+
+    </div>
+
+    <label>Estilo</label>
+
+    <select id="estilo" onchange="gerarAvatar()">
+
+        <option value="adventurer">Aventureiro</option>
+        <option value="fun-emoji">Emoji</option>
+        <option value="bottts">Robô</option>
+        <option value="pixel-art">Pixel</option>
+        <option value="thumbs">Cartoon</option>
+
+    </select>
+
+    <button onclick="novoAvatar()">
+        🔄 Gerar outro
+    </button>
+
+    <button onclick="continuar()">
+        Continuar
+    </button>
+
+</div>
+
+<script src="avatar.js"></script>
+
+</body>
+</html>

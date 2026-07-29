@@ -108,3 +108,25 @@ button:hover{
     background:#1E40AF;
 
 }
+
+.avatar-box{
+
+    margin:25px 0;
+
+}
+
+.avatar-box img{
+
+    width:220px;
+    height:220px;
+    border-radius:20px;
+    background:white;
+    border:3px solid #2563EB;
+
+}
+
+button{
+
+    margin-top:15px;
+
+}
