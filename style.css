@@ -269,3 +269,79 @@ font-size:120px;
 margin:20px;
 
 }
+
+#avatarPeso{
+
+    font-size:90px;
+
+    margin:20px 0;
+
+    color:white;
+
+}
+
+.info{
+
+    color:#e8e8e8;
+
+    margin-bottom:20px;
+
+}
+
+.campoPeso{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+}
+
+.campoPeso input{
+
+    width:120px;
+
+    padding:12px;
+
+    font-size:28px;
+
+    text-align:center;
+
+    border:none;
+
+    border-radius:12px;
+
+}
+
+.campoPeso span{
+
+    font-size:28px;
+
+    color:white;
+
+    font-weight:bold;
+
+}
+
+#valorPeso{
+
+    min-height:30px;
+
+    color:white;
+
+    font-size:20px;
+
+    margin-bottom:25px;
+
+}
+
+#continuar{
+
+    width:250px;
+
+}
