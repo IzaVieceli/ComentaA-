@@ -1,5 +1,9 @@
 function entrar() {
+
     alert("Funcionou!");
 
-    window.location.href = "avatar.html";
+    console.log("Indo para avatar.html");
+
+    window.location.href = "./avatar.html";
+
 }
