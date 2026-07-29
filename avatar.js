@@ -1,17 +1,27 @@
-let genero = "";
+let personagem = {
 
-function escolherGenero(valor){
-
-    genero = valor;
-
-    localStorage.setItem("genero",valor);
-
-    document.getElementById("btn").disabled = false;
+genero:""
 
 }
 
-function proximo(){
+function genero(valor){
 
-    window.location.href="peso.html";
+personagem.genero = valor;
+
+localStorage.setItem("personagem",JSON.stringify(personagem));
+
+document.getElementById("continuar").disabled=false;
+
+if(valor=="homem"){
+
+document.getElementById("avatar").innerHTML="👨";
+
+}
+
+else{
+
+document.getElementById("avatar").innerHTML="👩";
+
+}
 
 }

@@ -4,7 +4,7 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>ComentAí</title>
 
@@ -18,26 +18,28 @@
 
 <h1>💬 ComentAí</h1>
 
-<h2>Crie seu personagem</h2>
+<h2>Monte seu personagem</h2>
 
-<p>Escolha o gênero.</p>
+<div id="avatar">
 
-<div class="opcoes">
-
-<div class="opcao" onclick="escolherGenero('homem')">
-👨
-<p>Homem</p>
-</div>
-
-<div class="opcao" onclick="escolherGenero('mulher')">
-👩
-<p>Mulher</p>
-</div>
+😀
 
 </div>
 
-<button id="btn" onclick="proximo()" disabled>
-Próximo
+<h3>Gênero</h3>
+
+<div class="botoes">
+
+<button onclick="genero('homem')">👨 Homem</button>
+
+<button onclick="genero('mulher')">👩 Mulher</button>
+
+</div>
+
+<button id="continuar" onclick="window.location='peso.html'" disabled>
+
+Continuar
+
 </button>
 
 </div>
