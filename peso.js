@@ -25,13 +25,6 @@ function salvarPeso() {
 
     localStorage.setItem("personagem", JSON.stringify(personagem));
 
-    // Próxima tela
     window.location.href = "pele.html";
 
 }
-
-let largura = 40 + ((peso - 40) / 120) * 60;
-
-document.getElementById("corpo").setAttribute("width", largura);
-
-document.getElementById("corpo").setAttribute("x", 90 - largura / 2);
