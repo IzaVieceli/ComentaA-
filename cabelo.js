@@ -1,17 +1,22 @@
-console.log("cabelo.js carregado");
+console.log("JS carregado");
 
 let personagem = JSON.parse(localStorage.getItem("personagem")) || {};
 
 function selecionarCabelo(cor) {
-    console.log("Clique:", cor);
+
+    console.log("Cor:", cor);
 
     personagem.cabelo = cor;
 
     localStorage.setItem("personagem", JSON.stringify(personagem));
 
     document.getElementById("continuar").disabled = false;
+
+    document.getElementById("continuar").style.opacity = "1";
 }
 
 function continuar() {
+
     alert("Funcionou!");
+
 }
