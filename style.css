@@ -378,3 +378,31 @@ button:disabled {
     cursor:pointer;
 
 }
+
+.opcoesCabelo{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin:40px 0;
+
+}
+
+.opcoesCabelo button{
+
+    padding:15px 25px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+}
