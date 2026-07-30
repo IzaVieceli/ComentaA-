@@ -1,21 +1,17 @@
-let personagem = JSON.parse(localStorage.getItem("personagem"));
+console.log("cabelo.js carregado");
 
-if (!personagem) {
-    personagem = {};
-}
+let personagem = JSON.parse(localStorage.getItem("personagem")) || {};
 
-function selecionarCabelo(cor){
+function selecionarCabelo(cor) {
+    console.log("Clique:", cor);
 
     personagem.cabelo = cor;
 
     localStorage.setItem("personagem", JSON.stringify(personagem));
 
     document.getElementById("continuar").disabled = false;
-
 }
 
-function continuar(){
-
-    window.location.href = "olhos.html";
-
+function continuar() {
+    alert("Funcionou!");
 }
