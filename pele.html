@@ -1,27 +1,49 @@
-function atualizarPeso(){
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-    let peso = document.getElementById("peso").value;
+<head>
 
-    if(peso == ""){
-        document.getElementById("valorPeso").innerHTML = "";
-        document.getElementById("continuar").disabled = true;
-        return;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    document.getElementById("valorPeso").innerHTML = peso + " kg";
+    <title>ComentAí</title>
 
-    document.getElementById("continuar").disabled = false;
+    <link rel="stylesheet" href="style.css">
 
-}
+</head>
 
-function salvarPeso(){
+<body>
 
-    let personagem = JSON.parse(localStorage.getItem("personagem"));
+<div class="container">
 
-    personagem.peso = document.getElementById("peso").value;
+    <h1>💬 ComentAí</h1>
 
-    localStorage.setItem("personagem",JSON.stringify(personagem));
+    <h2>Escolha a cor da pele</h2>
 
-    window.location.href="pele.html";
+    <div class="cores">
 
-}
+        <button class="pele" style="background:#F8D7B8"
+        onclick="selecionarPele('#F8D7B8')"></button>
+
+        <button class="pele" style="background:#E6B98A"
+        onclick="selecionarPele('#E6B98A')"></button>
+
+        <button class="pele" style="background:#C68642"
+        onclick="selecionarPele('#C68642')"></button>
+
+        <button class="pele" style="background:#8D5524"
+        onclick="selecionarPele('#8D5524')"></button>
+
+    </div>
+
+    <button id="continuar" disabled onclick="continuar()">
+        Continuar
+    </button>
+
+</div>
+
+<script src="pele.js"></script>
+
+</body>
+
+</html>
