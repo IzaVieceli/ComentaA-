@@ -1,21 +1,15 @@
-let personagem = JSON.parse(localStorage.getItem("personagem"));
-
-if (!personagem) {
-    personagem = {};
-}
-
-function selecionarPele(cor) {
+function selecionarPele(cor){
 
     personagem.pele = cor;
 
     localStorage.setItem("personagem", JSON.stringify(personagem));
 
-    document.getElementById("continuar").disabled = false;
+    document.querySelectorAll(".pele").forEach(botao=>{
+        botao.classList.remove("selecionado");
+    });
 
-}
+    event.target.classList.add("selecionado");
 
-function continuar() {
-
-    window.location.href = "cabelo.html";
+    document.getElementById("continuar").disabled=false;
 
 }

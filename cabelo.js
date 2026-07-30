@@ -1,22 +1,15 @@
-console.log("JS carregado");
-
-let personagem = JSON.parse(localStorage.getItem("personagem")) || {};
-
-function selecionarCabelo(cor) {
-
-    console.log("Cor:", cor);
+function selecionarCabelo(cor){
 
     personagem.cabelo = cor;
 
     localStorage.setItem("personagem", JSON.stringify(personagem));
 
-    document.getElementById("continuar").disabled = false;
+    document.querySelectorAll(".cabelo").forEach(botao=>{
+        botao.classList.remove("selecionado");
+    });
 
-    document.getElementById("continuar").style.opacity = "1";
-}
+    event.target.classList.add("selecionado");
 
-function continuar() {
-
-    alert("Funcionou!");
+    document.getElementById("continuar").disabled=false;
 
 }
