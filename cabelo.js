@@ -1,5 +1,9 @@
 let personagem = JSON.parse(localStorage.getItem("personagem"));
 
+if (!personagem) {
+    personagem = {};
+}
+
 function selecionarCabelo(cor){
 
     personagem.cabelo = cor;
